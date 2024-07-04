@@ -6,9 +6,7 @@ const {
   updateBook,
   deleteBook
 } = require('../controllers/bookController');
-
 const router = express.Router();
-
 router.post('/', createBook);
 router.get('/', getAllBooks);
 router.get('/:id', getBookById);
